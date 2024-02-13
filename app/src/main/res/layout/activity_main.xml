@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+<ImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:padding="24dp"
+    android:src="@mipmap/avion"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Notre App"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="24dp"
+        android:textColor="@color/colorWhite"
+        android:text="Offrez vous des vacances en bord de mer avec Notre App avec toutes les commodités qui vont avec."
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/bt_commencer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Commencer" />
+</LinearLayout>
