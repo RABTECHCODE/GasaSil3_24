@@ -12,9 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
-
         <activity
-            android:name=".JeuActivity"
+            android:name=".FormActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,11 +22,16 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".JeuActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
             android:name=".PresentationActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

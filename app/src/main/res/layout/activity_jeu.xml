@@ -2,9 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
     android:padding="48dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score : "
+            android:textSize="20sp" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,6 +26,7 @@
         android:layout_weight="3"
         android:gravity="center"
         android:orientation="vertical">
+
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -29,12 +44,22 @@
             android:textSize="30sp" />
 
         <TextView
+            android:id="@+id/tv_nom_joueur"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+
+            android:gravity="center"
+            android:text="Paul"
+            android:textSize="24sp" />
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:gravity="center"
             android:text="Notre app est ouvert tout les jours de semaine"
-            android:textSize="13sp" />
+            android:textSize="13sp"
+            android:visibility="gone" />
     </LinearLayout>
 
     <LinearLayout
@@ -54,8 +79,8 @@
                 android:id="@+id/imgv_1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:layout_margin="8dp"
+                android:layout_weight="1"
 
                 android:scaleType="centerCrop"
                 android:src="@drawable/etoo" />
@@ -84,8 +109,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
-                android:scaleType="centerCrop"
                 android:layout_weight="1"
+                android:scaleType="centerCrop"
                 android:src="@drawable/messi" />
 
 
@@ -101,8 +126,10 @@
 
         </LinearLayout>
     </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="4"/>
+        android:layout_weight="4" />
+
 </LinearLayout>
